@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Shoes One - Belanja Sepatu Indonesia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="imgnew\S40x40.png" rel="icon">
+  <link href="imgnew\S180x180.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Yummy
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Shoes One<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="btn-book-a-table" data-bs-toggle="modal" data-bs-target="#signupModal">Daftar</a>
+          <li id="account-info" style="display: none;">
+            <a href="#accountModal" class="btn-book-a-table" data-bs-toggle="modal" data-bs-target="#accountModal">Akun Saya</a>
+          </li>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">welcome to our store <br>Shoes One.</h2>
+          <p data-aos="fade-up" data-aos-delay="100"> Langkahkan ke dunia gaya kami dan temukan berbagai macam sepatu yang akan membuat langkah Anda selangkah lebih bergaya. Kami siap membantu Anda mengeksplorasi berbagai pilihan sepatu yang sesuai dengan gaya dan kebutuhan Anda. Mulailah petualangan belanja sepatu Anda bersama Shoes One!</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="1000">
+            <a href="#" class="btn-book-a-table" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk</a>
+
+            <a href="https://youtu.be/27EbYKSPz8s?si=-7ODrjdi_YXns5HO" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Tontonlah video!</span></a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="imgnew/model2rev.png" class="model2rev" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+
+        <!-- Tambahkan ini di dalam modal "Login" -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Masuk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="login-form">
+              <div class="mb-3">
+                <label for="login-email" class="form-label">Email or Username</label>
+                <input type="text" class="form-control" id="login-email" required>
+              </div>
+              <div class="mb-3">
+                <label for="login-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="login-password" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Masuk</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tambahkan ini di dalam modal "Sign Up" -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Daftar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="signup-form">
+              <div class="mb-3">
+                <label for="signup-username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="signup-username" required>
+              </div>
+              <div class="mb-3">
+                <label for="signup-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signup-email" required>
+              </div>
+              <div class="mb-3">
+                <label for="signup-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signup-password" required>
+              </div>
+              <div class="mb-3">
+                <label for="signup-phone" class="form-label">Nomor Handphone</label>
+                <input type="tel" class="form-control" id="signup-phone" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Daftar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal untuk informasi akun -->
+    <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="accountModalLabel">Akun Saya</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="path_to_user_image.jpg" alt="User Image" class="user-image">
+            <p>Username: <span id="account-username"></span></p>
+            <p>Email: <span id="account-email"></span></p>
+            <p>Nomor Handphone: <span id="account-phone"></span></p>
+            <button type="button" class="btn btn-danger" id="logout">Log Out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Tentang Kami</h2>
+          <p>Pelajari lebih lanjut <span>tentang kami</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(imgnew/about2.jpg) ;" data-aos="fade-up" data-aos-delay="150">
+            <div class="call-us position-absolute">
+              <h4>Hubungi kami</h4>
+              <p>+62 812 1234 5678</p>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                "Shoes One" adalah olshop yang menonjol dengan sejumlah 
+                kelebihan yang membuatnya menjadi destinasi unggulan bagi para pencinta sepatu.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> Beragam produk sepatu berkualitas tinggi yang tersedia.</li>
+                <li><i class="bi bi-check2-all"></i> Kualitas bahan yang digunakan.</li>
+                <li><i class="bi bi-check2-all"></i> pelayanan pelanggan cepat dan efisien.</li>
+              </ul>
+              <p>
+                Sebagai toko online yang terkenal, "Shoes One" terus berusaha meningkatkan dan memperluas jangkauan produk mereka, sehingga pelanggan selalu memiliki akses ke produk terbaru dan tren terkini dalam dunia alas kaki. Kelebihan-kelebihan inilah yang membuat "Shoes One" menjadi pilihan utama bagi mereka yang 
+                menginginkan sepatu berkualitas tinggi dan gaya yang unik.
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="imgnew/about.jpg" class="img-fluid" alt="">
+                <a href="https://youtu.be/UbpuZCB3x9k?si=NUbgZLM5JaIOiPYE" class="glightbox play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3>Kenapa Shoes One?</h3>
+              <p>
+                Selain kualitas produk yang tinggi, "Shoes One" juga dikenal karena berbagai pilihan gaya yang mereka tawarkan. Dari sepatu kasual hingga sepatu olahraga, toko ini memiliki koleksi yang luas untuk memenuhi berbagai kebutuhan dan selera fashion pelanggan. Pengunjung "Shoes One" akan 
+                menemukan sepatu yang sesuai dengan gaya sehari-hari mereka, acara khusus, atau bahkan kegiatan olahraga.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Lebih lanjut<i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-center">
+            <div class="row gy-4">
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h4>Harga terjangkau</h4>
+                  <p>Harga cukup ramah dikantong cocok untuk konsumen yang low budgetnya</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-gem"></i>
+                  <h4>Berkualitas</h4>
+                  <p>Pastinya barang dan produk ditoko ini sangatah berkualitas</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4>Terlengkap</h4>
+                  <p>Kami mengusahakan yang terbaik untuk melengkapi kebutuhan konsumen dimasa yang akan datang</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Pelanggan</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Jenis Sepatu</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Cabang Toko</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Pekerja</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Produk kami</h2>
+          <p>Lihat<span> produk kami</span></p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-nike">
+              <h4>Nike</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-adidas">
+              <h4>Adidas</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-converse">
+              <h4>Converse</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-reebok">
+              <h4>Reebok</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+        
+        <!-- Menu Produk -->
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <!--Merek nike -->
+          <div class="tab-pane fade active show" id="menu-nike">
+
+            <div class="tab-header text-center">
+              <p>Merek</p>
+              <h3>Nike</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\nike\nike(1).png" class="glightbox"><img src="imgnew\nike\nike(1).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Nike Court Vision</h4> DH2987-101 </h4>
+                <p class="price">
+                  Rp600K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\nike\nike(2).png" class="glightbox"><img src="imgnew\nike\nike(2).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Nike Venture Runner</h4> CK2944-400 </h4>
+                <p class="price">
+                  Rp720K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\nike\nike(3).png" class="glightbox"><img src="imgnew\nike\nike(3).png" class="menu-img img-fluid" alt=""></a>
+                <h4>NIke Quest 2</h4> CI3787-402 AFO </h4>
+                <p class="price">
+                  Rp500K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\nike\nike(4).png" class="glightbox"><img src="imgnew\nike\nike(4).png" class="menu-img img-fluid" alt=""></a>
+                <h4>NIKE Court Legacy Mule</h4> DB3970-003 </h4>
+                <p class="price">
+                  Rp675K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\nike\nike(5).png" class="glightbox"><img src="imgnew\nike\nike(5).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Nike Court Legacy Canvas Black</h4> CZ0294-001 </h4>
+                <p class="price">
+                  Rp750K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\nike\nike(6).png" class="glightbox"><img src="imgnew\nike\nike(6).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Nike Revolution 6</h4> DD8475-404 </h4>
+                <p class="price">
+                  Rp800K
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <!--Merek adidas -->
+          <div class="tab-pane fade" id="menu-adidas">
+            
+            <div class="tab-header text-center">
+              <p>Merek</p>
+              <h3>Adidas</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\adidas\adidas(1).png" class="glightbox"><img src="imgnew\adidas\adidas(1).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Adidas Running 6</h4>HP6646</h4>
+                <p class="price">
+                  Rp550K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\adidas\adidas(2).png" class="glightbox"><img src="imgnew\adidas\adidas(2).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Adidas Court Control</h4>HQ8808-ORI</h4>
+                <p class="price">
+                  Rp950K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\adidas\adidas(3).png" class="glightbox"><img src="imgnew\adidas\adidas(3).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Adidas Solecourt M Primeblue</h4>GX9066-ORI</h4>
+                <p class="price">
+                  Rp1.850K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\adidas\adidas(4).png" class="glightbox"><img src="imgnew\adidas\adidas(4).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Adidas Running Duramo</h4>FW7391</h4>
+                <p class="price">
+                  Rp520K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\adidas\adidas(5).png" class="glightbox"><img src="imgnew\adidas\adidas(5).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Adidas Mudial Goal</h4>019310-ORI</h4>
+                <p class="price">
+                  Rp1.600K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\adidas\adidas(6).png" class="glightbox"><img src="imgnew\adidas\adidas(6).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Adidas Nizza</h4>HQ6763-ORI</h4>
+                <p class="price">
+                  Rp650K
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+          <!--Merek converse -->
+          <div class="tab-pane fade" id="menu-converse">
+
+            <div class="tab-header text-center">
+              <p>Merek</p>
+              <h3>Converse</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\converse\converse(1).png" class="glightbox"><img src="imgnew\converse\converse(1).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Converse Ctas HI</h4>A02798C-ORI</h4>
+                <p class="price">
+                  Rp500K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\converse\converse(2).png" class="glightbox"><img src="imgnew\converse\converse(2).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Converse Chuck 70HI X ACW</h4>A02276C-ORI</h4>
+                <p class="price">
+                  Rp800K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\converse\converse(3).png" class="glightbox"><img src="imgnew\converse\converse(3).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Converse Chuck 70HI X ACW</h4>A02277C-ORI</h4>
+                <p class="price">
+                  Rp800K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\converse\converse(4).png" class="glightbox"><img src="imgnew\converse\converse(4).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Converse Pro Blaze V2 Mid</h4>A03483C-ORI</h4>
+                <p class="price">
+                  Rp900K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\converse\converse(5).png" class="glightbox"><img src="imgnew\converse\converse(5).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Converse Skid Grip OX</h4>169219C-ORI</h4>
+                <p class="price">
+                  Rp500K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\converse\converse(6).png" class="glightbox"><img src="imgnew\converse\converse(6).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Converse Ctas CX HI</h4>A03463C-ORI</h4>
+                <p class="price">
+                  Rp780K
+                </p>
+              </div><!-- Menu Item -->
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
+          <!--Merek reebok -->
+          <div class="tab-pane fade" id="menu-reebok">
+
+            <div class="tab-header text-center">
+              <p>Merek</p>
+              <h3>Reebok</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\reebok\reebok(1).png" class="glightbox"><img src="imgnew\reebok\reebok(1).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Reebok Ztaur Run II</h4>100033865-ORI</h4>
+                <p class="price">
+                  Rp550K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\reebok\reebok(2).png" class="glightbox"><img src="imgnew\reebok\reebok(2).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Reebok Nanoflex TR 2</h4>100033772-ORI</h4>
+                <p class="price">
+                  Rp600K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\reebok\reebok(3).png" class="glightbox"><img src="imgnew\reebok\reebok(3).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Reebok NFX Trainer</h4>HP9242-ORI</h4>
+                <p class="price">
+                  Rp750K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\reebok\reebok(4).png" class="glightbox"><img src="imgnew\reebok\reebok(4).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Reebok Club C Revenge</h4>100033713-ORI</h4>
+                <p class="price">
+                  Rp550K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\reebok\reebok(5).png" class="glightbox"><img src="imgnew\reebok\reebok(5).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Reebok LT Court</h4>100033445-ORI</h4>
+                <p class="price">
+                  Rp560K
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="imgnew\reebok\reebok(6).png" class="glightbox"><img src="imgnew\reebok\reebok(6).png" class="menu-img img-fluid" alt=""></a>
+                <h4>Reebok Flexagon Force 4</h4>100033371-ORI</h4>
+                <p class="price">
+                  Rp500K
+                </p>
+              </div><!-- Menu Item -->
+            </div>
+          </div><!-- End Dinner Menu Content -->
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Komentar</h2>
+          <p> Kritik <span>Bagi Kami</span></p>
+        </div>
+
+        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Ogahh mazssee!!
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Dhito Sudirman</h3>
+                      <h4>Mahasiswa</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="imgnew\testiprofil\meme1.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        WENAK POLL CUYY!!
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>David Toyota</h3>
+                      <h4>Hobi</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="imgnew\testiprofil\meme2.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Ahsiyaappp barangnya cepatt sekalii yaa~
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Ryan Kantona</h3>
+                      <h4>Konsumen</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="imgnew\testiprofil\meme3.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        PARAHH PARAHH toko ini baranggnya mangtapp jiwaaa!!
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Ahmad Subagia</h3>
+                      <h4>Pelajar</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="imgnew\testiprofil\meme4.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>News</h2>
+          <p>Berita<span> Terkini</p>
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(imgnew/news/sneakernews1.jpg)">
+              <h3>Sneaker Putih</h3>
+              <div class="price align-self-start">$2,2Jt</div>
+              <p class="description">
+                "Sneaker yang chic selalu menambah kesan sporty pada tampilan apa pun dan sangat nyaman," jelasnya.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(imgnew/news/gespernews2.jpg)">
+              <h3>Gesper Buckle Shoes</h3>
+              <div class="price align-self-start">$1,5Jt</div>
+              <p class="description">
+                "Buckle adalah metode terbaru untuk mengubah sepatu gladiator kuno, menambahkan gaya gothic dengan nuansa kontras dari hitam ke perak," sebut Young.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(imgnew/news/jordannews3.jpg)">
+              <h3>Sneaker Air Jordan 1 High OG Bth</h3>
+              <div class="price align-self-start">$1Jt</div>
+              <p class="description">
+                "Young mencatat, selama dua tahun terakhir ada perubahan drastis dari penggunaan warna-warna cerah dan retro ke warna yang lebih kalem."
+              </p>
+            </div><!-- End Event item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Perlu Bantuan? <span>Kontak Kami</span></p>
+        </div>
+        <!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-map flex-shrink-0"></i>
+              <div>
+                <h3>Alamat</h3>
+                <p>Villa Puncak Dieng AD48, Dau, Malang 62151</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>shoesone1@example.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Telepon</h3>
+                <p>+62 812 1234 5678</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Jam Buka</h3>
+                <div><strong>Senin-Sabtu:</strong> 8AM - 5PM;
+                  <strong>Minggu:</strong> Tutup
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Ma Chung 2023</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
+        by <a href="https://bootstrapmade.com/">Ayangtx</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <!--Menampilkan akun pengguna-->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
