@@ -785,7 +785,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 2, 2, 0.5)), url("/yongki85/blob/main/imgnew/wall.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 2, 2, 0.5)), url("/imgnew/wall.jpg") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -1100,7 +1100,7 @@ section {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: url(../img/team-shape.svg) no-repeat center bottom;
+  background: url(/imgnew/team-shape.svg) no-repeat center bottom;
   background-size: contain;
   z-index: 1;
 }
